@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+  centos7:
+    hostname: centos7
+    container_name: centos7
+    build:
+      context: .
+      dockerfile: ./centos7/Dockerfile
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./centos7:/centos7
+      - ./data:/data
