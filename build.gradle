@@ -8,11 +8,23 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
-
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'io.lettuce:lettuce-core:6.2.3.RELEASE'
+    implementation 'org.apache.commons:commons-pool2:2.8.1'
 }
+
+tasks.named('jar') {
+    manifest {
+        attributes('Main-Class': 'RedisClusterTest',
+                'Class-Path': '.')
+    }
+}
+
+
+
+
 
 test {
     useJUnitPlatform()
