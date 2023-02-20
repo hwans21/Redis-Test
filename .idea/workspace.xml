@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f44c13c1-0730-4a25-985b-9be83529e476" name="Changes" comment="project init">
-      <change afterPath="$PROJECT_DIR$/docker_centos/data/Redis-test-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_centos/data/lettuce-core-6.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_centos/data/netty-codec-4.1.89.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_centos/data/netty-common-4.1.89.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_centos/data/netty-handler-4.1.89.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RedisClusterTest.java" afterDir="false" />
+    <list default="true" id="f44c13c1-0730-4a25-985b-9be83529e476" name="Changes" comment="redis cluster testcode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +79,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/hwans/code/hwans21/Redis-test/docker_centos/data",
-    "settings.editor.selected.configurable": "Console"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hwans/code/hwans21/Redis-test/docker_centos/data&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hwans\code\hwans21\Redis-test\docker_centos\data" />
@@ -214,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676890023377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="redis cluster testcode">
+      <created>1676906619055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676906619055</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +230,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project init" />
-    <option name="LAST_COMMIT_MESSAGE" value="project init" />
+    <MESSAGE value="redis cluster testcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis cluster testcode" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
