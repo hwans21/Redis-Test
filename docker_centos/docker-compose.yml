@@ -2,14 +2,34 @@ version: '2'
 
 services:
 
-  centos7:
-    hostname: centos7
-    container_name: centos7
+  centos7-1:
+    hostname: centos7-1
+    container_name: centos7-1
     build:
       context: .
-      dockerfile: ./centos7/Dockerfile
+      dockerfile: ./centos7-1/Dockerfile
+    ports:
+      - "6300:6300"
+      - "5000:5000"
+      - "5001:5001"
     stdin_open: true
     tty: true
     volumes:
-      - ./centos7:/centos7
-      - ./data:/data
+      - ./centos7-1:/centos7
+      - ./centos7-1/data:/data
+
+  centos7-2:
+    hostname: centos7-2
+    container_name: centos7-2
+    build:
+      context: .
+      dockerfile: ./centos7-2/Dockerfile
+    ports:
+      - "6301:6301"
+      - "5002:5002"
+      - "5003:5003"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./centos7-2:/centos7
+      - ./centos7-2/data:/data

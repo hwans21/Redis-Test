@@ -16,7 +16,7 @@ public class RedisClusterTest {
             GenericObjectPool<StatefulRedisClusterConnection<String, String>> pool = ConnectionPoolSupport
                     .createGenericObjectPool(() -> clusterClient.connect(), new GenericObjectPoolConfig());
 
-// execute work
+// execute workt
             try (StatefulRedisClusterConnection<String, String> connection = pool.borrowObject()) {
                 connection.sync().set("key", "value");
                 connection.sync().blpop(10, "list");

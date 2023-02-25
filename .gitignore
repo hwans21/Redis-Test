@@ -40,3 +40,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/docker_centos/centos7-1/
+/docker_centos/centos7-2/
+/.idea/encodings.xml
